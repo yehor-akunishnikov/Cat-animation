@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: rgb(13, 13, 29);
+  overflow: hidden;
+}
+
+.cat-part {
+  font-weight: 700;
+  color: #fff;
+  font-size: 10px;
+}
+
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cat {
+  animation: rotate-cat 10s infinite;
+}
+
+@keyframes rotate-cat {
+  0% {
+    transform: rotate(360deg) scale(0);
+  }
+  15% {
+    transform: rotate(0deg) scale(1.5);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1.5);
+  }
+}
+
+.cp-1 {
+  color: red;
+}
+.cp-2 {
+  color: red;
+}
+.cp-3 {
+  color: red;
+}
+.cp-4 {
+  color: orange;
+}
+.cp-5 {
+  color: orange;
+}
+.cp-6 {
+  color: orange;
+}
+.cp-7 {
+  color: yellow;
+}
+.cp-8 {
+  color: yellow;
+}
+.cp-9 {
+  color: yellow;
+}
+.cp-10 {
+  color: green;
+}
+.cp-11 {
+  color: green;
+}
+.cp-12 {
+  color: green;
+}
+.cp-13 {
+  color: lightskyblue;
+}
+.cp-14 {
+  color: lightskyblue;
+}
+.cp-15 {
+  color: lightskyblue;
+}
+.cp-16 {
+  color: blue;
+}
+.cp-17 {
+  color: blue;
+}
+.cp-18 {
+  color: blue;
+}
+.cp-19 {
+  color: purple;
+}
+.cp-20 {
+  color: purple;
+}
