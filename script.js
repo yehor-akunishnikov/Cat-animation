@@ -1,18 +1,20 @@
-const catParts = document.querySelectorAll('.cat-part');
 const main = document.getElementById('main');
+const cat = document.querySelector('.cat');
+const catParts = cat.querySelectorAll('.cat-part');
+
+const getAvailableNumbers = () => {
+  return [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+  ];
+};
 
 const paintCat = () => {
-  let availableNumbers = ('' + Array(20)).split(',').map(
-    function () {
-      return this[0]++;
-    },
-    [1]
-  );
-  availableNumbers = [1, ...availableNumbers];
+  const availableNumbers = getAvailableNumbers();
 
   catParts.forEach((catPart) => {
     const currentClass = catPart.getAttribute('class');
     const splittedCurrentClass = currentClass.split('cp');
+
     const cpNumber = Math.abs(
       parseInt(splittedCurrentClass[splittedCurrentClass.length - 1])
     );
@@ -22,7 +24,6 @@ const paintCat = () => {
     );
 
     availableNumbers.splice(cpNumberIndex, 1);
-
     catPart.classList.remove(`cp-${cpNumber}`);
     catPart.classList.add(`cp-${availableNumbers[newCpNumber]}`);
   });
