@@ -26,10 +26,10 @@ body {
     filter: blur(20px);
     transform: rotate(0) scale(0);
   }
-  10% {
+  15% {
     transform: rotate(1080deg) scale(1.5);
   }
-  30% {
+  40% {
     filter: blur(0px);
   }
   100% {
